@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./serviceworker.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <header class="layout">
+        <div class="brand-logo"><a href="#">weatherapp</a></div>
+        <nav>
+          <ul class="navigation-list">
+            <li class="navigation-item"><a href="#">About Us</a></li>
+            <li class="navigation-item"><a href="#">Services</a></li>
+            <li class="navigation-item"><a href="#">Log In</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="container">
+        <div class="weather-box">
+          <div class="current-location">
+            <div class="error-msg"></div>
+            Lat: <span id="lat"></span> Long: <span id="long"></span>
+          </div>
+          <button class="weather-button" onclick="fetchData()">Get Data</button>
+          <div class="result-pane">
+            <ul id="list-pane"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>All Rights &copy 2020</footer>
+    <script src="./location.js"></script>
+
+    <script src="./apiCall.js"></script>
+  </body>
+</html>

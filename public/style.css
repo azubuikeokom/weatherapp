@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap");
+:root {
+  --shadow: 0.1rem 0.1rem 0.5rem 0.1rem #c0bbbb;
+}
+body {
+  background-color: aliceblue;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  height: 100vh;
+}
+.layout {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+header {
+  background-color: #856363;
+  padding: 0.5rem;
+}
+.brand-logo {
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-family: "Kufam", cursive;
+}
+
+.navigation-list {
+  display: flex;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  padding-top: 0.8rem;
+}
+.navigation-item {
+  margin: 0 0.3rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-item a:hover {
+  color: blanchedalmond;
+  transition: 0.5s ease-out;
+}
+
+/* weather pane */
+
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-button {
+  background-color: #00ffff;
+  border: #a9a9a9 solid 0.1rem;
+  border-radius: 0.5rem;
+}
+.weather-button:hover {
+  background-color: cornflowerblue;
+  transition: 0.8s ease-in-out;
+}
+
+.current-location {
+  box-shadow: var(--shadow);
+  max-width: 23rem;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+  margin: 0.7rem 0;
+}
+.result-pane {
+  margin-top: 1rem;
+  width: 18rem;
+}
+.list-item {
+  border: solid 0.01rem;
+  border-radius: 0.3rem;
+}
+.temp {
+  padding: 1rem;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f4f4f;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation-list {
+    flex-direction: column;
+  }
+  .navigation-item {
+    margin-left: 0;
+  }
+  .weather-pane {
+    margin-left: 1rem;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+}
